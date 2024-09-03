@@ -1,0 +1,15 @@
+﻿@page "/helloblazor"
+
+<h3>Hello Blazor Web App!</h3>
+
+<p>This is your first custom Blazor page.</p>
+
+<!-- Input with binding -->
+<input type="text" @bind-value=myName @bind-value:event="oninput" placeholder="Enter your name"/>
+
+<!-- Display the bound value -->
+<p>Welcome, @myName!</p>
+
+@code {
+    private string? myName { get; set; }
+}
